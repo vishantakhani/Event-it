@@ -1,0 +1,100 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.lalit.eventit.FrgSignup"
+    android:id="@+id/flSig"
+    android:background="@drawable/swoopzi">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <!-- TODO: Update blank fragment layout -->
+        <TextView
+            android:id="@+id/tvLogo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Event-It!"
+            android:gravity="center"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="50dp"
+            android:textSize="25dp"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/etFirstName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="First Name"
+                android:layout_weight="1"
+                android:layout_marginLeft="@dimen/marginHorizontal"
+                android:textColor="@android:color/black"
+                android:background="@drawable/et_border"
+                android:layout_marginBottom="@dimen/marginBottom"
+                android:paddingVertical="@dimen/marginBottom"
+                android:paddingLeft="@dimen/marginBottom"/>
+
+            <EditText
+                android:id="@+id/etLastName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Last Name"
+                android:layout_weight="1"
+                android:layout_marginRight="@dimen/marginHorizontal"
+                android:textColor="@android:color/black"
+                android:background="@drawable/et_border"
+                android:layout_marginBottom="@dimen/marginBottom"
+                android:paddingVertical="@dimen/marginBottom"
+                android:paddingLeft="@dimen/marginBottom"
+                android:layout_marginLeft="2dp"/>
+        </LinearLayout>
+        <EditText
+            android:id="@+id/etEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Email"
+            android:layout_marginHorizontal="@dimen/marginHorizontal"
+            android:textColor="@android:color/black"
+            android:background="@drawable/et_border"
+            android:layout_marginBottom="@dimen/marginBottom"
+            android:paddingVertical="@dimen/marginBottom"
+            android:paddingLeft="@dimen/marginBottom"/>
+
+        <EditText
+            android:id="@+id/etPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Password"
+            android:layout_marginHorizontal="@dimen/marginHorizontal"
+            android:textColor="@android:color/black"
+            android:background="@drawable/et_border"
+            android:layout_marginBottom="@dimen/marginBottom"
+            android:paddingVertical="@dimen/marginBottom"
+            android:paddingLeft="@dimen/marginBottom"/>
+
+        <EditText
+            android:id="@+id/etConfirmPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Confirm Password"
+            android:layout_marginHorizontal="@dimen/marginHorizontal"
+            android:textColor="@android:color/black"
+            android:background="@drawable/et_border"
+            android:layout_marginBottom="@dimen/marginBottom"
+            android:paddingVertical="@dimen/marginBottom"
+            android:paddingLeft="@dimen/marginBottom"/>
+        <Button
+            android:id="@+id/btnSubmit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Signup"
+            android:background="@drawable/btn_login"
+            android:layout_marginTop="@dimen/marginButton"
+            android:layout_marginHorizontal="@dimen/marginButton"/>
+    </LinearLayout>
+</FrameLayout>

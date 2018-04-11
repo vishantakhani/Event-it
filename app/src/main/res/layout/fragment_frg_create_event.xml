@@ -1,0 +1,109 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.lalit.eventit.FrgCreateEvent"
+    android:orientation="vertical"
+    android:background="@drawable/swoopzi">
+
+    <EditText
+        android:id="@+id/etEventName"
+        android:layout_width="match_parent"
+        android:layout_height="50sp"
+        android:background="@drawable/et_border"
+        android:hint="Event Name"
+        android:paddingLeft="@dimen/marginBottom"
+        android:layout_margin="@dimen/marginBottom"/>
+    <LinearLayout
+        android:id="@+id/llEventStartDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <EditText
+            android:id="@+id/etEventStartDate"
+            android:layout_width="match_parent"
+            android:layout_height="50sp"
+            android:background="@drawable/et_border"
+            android:hint="Event Start Date"
+            android:paddingLeft="@dimen/marginBottom"
+            android:layout_marginVertical="@dimen/marginBottom"
+            android:layout_marginLeft="@dimen/marginBottom"
+            android:layout_weight="1"
+            android:enabled="false"/>
+
+        <ImageButton
+            android:id="@+id/ibEventStartDate"
+            android:layout_width="50sp"
+            android:layout_height="50sp"
+            android:src="@drawable/ic_calendar"
+            android:layout_marginRight="@dimen/marginBottom"
+            android:layout_marginTop="@dimen/marginBottom"
+            android:background="@drawable/et_border"
+            android:layout_marginLeft="1sp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llEventEndDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <EditText
+            android:id="@+id/etEventEndDate"
+            android:layout_width="match_parent"
+            android:layout_height="50sp"
+            android:background="@drawable/et_border"
+            android:hint="Event End Date"
+            android:paddingLeft="@dimen/marginBottom"
+            android:layout_marginVertical="@dimen/marginBottom"
+            android:layout_marginLeft="@dimen/marginBottom"
+            android:layout_weight="1"
+            android:enabled="false"/>
+
+        <ImageButton
+            android:id="@+id/ibEventEndDate"
+            android:layout_width="50sp"
+            android:layout_height="50sp"
+            android:src="@drawable/ic_calendar"
+            android:layout_marginRight="@dimen/marginBottom"
+            android:layout_marginTop="@dimen/marginBottom"
+            android:background="@drawable/et_border"
+            android:layout_marginLeft="1sp"/>
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/etEventVenue"
+        android:layout_width="match_parent"
+        android:layout_height="50sp"
+        android:background="@drawable/et_border"
+        android:hint="Venue"
+        android:paddingLeft="@dimen/marginBottom"
+        android:layout_margin="@dimen/marginBottom"/>
+
+    <EditText
+        android:id="@+id/etEventCity"
+        android:layout_width="match_parent"
+        android:layout_height="50sp"
+        android:background="@drawable/et_border"
+        android:hint="City"
+        android:paddingLeft="@dimen/marginBottom"
+        android:layout_margin="@dimen/marginBottom"/>
+
+    <EditText
+        android:id="@+id/etEventDescription"
+        android:layout_width="match_parent"
+        android:layout_height="50sp"
+        android:background="@drawable/et_border"
+        android:hint="Description"
+        android:paddingLeft="@dimen/marginBottom"
+        android:layout_margin="@dimen/marginBottom"/>
+
+    <Button
+        android:id="@+id/btnCreateEvent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Create Event"
+        android:background="@drawable/btn_login_main"
+        android:layout_margin="@dimen/marginBottom"
+        android:textAllCaps="false"/>
+
+</LinearLayout>

@@ -1,0 +1,79 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.lalit.eventit.FrgLogin"
+    android:id="@+id/rlLog"
+    android:background="@drawable/swoopzi">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <!-- TODO: Update blank fragment layout -->
+        <TextView
+            android:id="@+id/tvLogo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Event-It!"
+            android:gravity="center"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="50dp"
+            android:textSize="25dp"
+            android:textColor="@android:color/white"/>
+
+        <EditText
+            android:id="@+id/etEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Email"
+            android:layout_marginHorizontal="@dimen/marginHorizontal"
+            android:textColor="@android:color/black"
+            android:background="@drawable/et_border"
+            android:layout_marginBottom="@dimen/marginBottom"
+            android:paddingVertical="@dimen/marginBottom"
+            android:paddingLeft="@dimen/marginBottom"/>
+
+        <EditText
+            android:id="@+id/etPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Password"
+            android:layout_marginHorizontal="@dimen/marginHorizontal"
+            android:textColor="@android:color/black"
+            android:background="@drawable/et_border"
+            android:paddingVertical="@dimen/marginBottom"
+            android:paddingLeft="@dimen/marginBottom"/>
+        <Button
+            android:id="@+id/btnSignin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Login"
+            android:layout_marginHorizontal="@dimen/marginButton"
+            android:background="@drawable/btn_login"
+            android:layout_marginTop="20dp"/>
+        <TextView
+            android:id="@+id/tvForgotPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Forgot Password?"
+            android:gravity="right"
+            android:layout_marginTop="20dp"
+            android:textColor="@android:color/white"
+            android:layout_marginRight="@dimen/marginButton"/>
+    </LinearLayout>
+    <Button
+        android:id="@+id/btnGoogle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sign in with Google"
+        android:textColor="#000"
+        android:textAllCaps="false"
+        android:background="@drawable/button_shape"
+        android:layout_marginHorizontal="@dimen/marginHorizontal"
+        android:layout_alignParentBottom="true"
+        android:drawablePadding="-80dp"
+        android:drawableLeft="@drawable/ic_google"
+        android:paddingLeft="100dp"
+        android:layout_marginBottom="@dimen/marginBottom"/>
+</RelativeLayout>
